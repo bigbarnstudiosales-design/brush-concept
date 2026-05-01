@@ -6,3 +6,13 @@ export interface Point {
   x: number;
   y: number;
 }
+
+export interface Pigment {
+  id: string;
+  name: string;
+  color: Rgb;
+  tintingStrength: number;
+  opacity: number;
+  granulation: number;
+  diffusion: number;
+}

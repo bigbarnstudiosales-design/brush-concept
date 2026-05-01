@@ -6,7 +6,21 @@
     <title>Natural Paint Prototype</title>
   </head>
   <body>
-    <canvas id="paint-canvas" aria-label="Natural paint canvas"></canvas>
+    <main class="workspace">
+      <canvas id="paint-canvas" aria-label="Natural paint canvas"></canvas>
+      <div class="toolbar" aria-label="Brush controls">
+        <label for="brush-size">Size</label>
+        <input id="brush-size" type="range" min="8" max="96" step="2" />
+        <span id="brush-size-value" aria-live="polite"></span>
+        <label for="brush-load">Load</label>
+        <input id="brush-load" type="range" min="0" max="100" step="25" />
+        <span id="brush-load-value" aria-live="polite"></span>
+        <label for="mix-amount">Mix</label>
+        <input id="mix-amount" type="range" min="0" max="100" step="5" />
+        <span id="mix-amount-value" aria-live="polite"></span>
+        <button id="clean-brush" type="button">Clean</button>
+      </div>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

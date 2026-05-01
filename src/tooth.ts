@@ -1,4 +1,4 @@
-function hashNoise(x: number, y: number, seed: number): number {
+export function hashNoise(x: number, y: number, seed: number): number {
   let value = x * 374761393 + y * 668265263 + seed * 362437;
   value = (value ^ (value >> 13)) * 1274126177;
   return ((value ^ (value >> 16)) >>> 0) / 4294967295;
